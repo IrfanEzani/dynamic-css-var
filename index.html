@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="centre">
-
-    <div class="container">
+    <div id="container">
+        <h2>CIA LOGIN</h2>
         <form id="form">
         <div class="form-control">
             <label for="name">Username</label>
-            <input type="text" placeholder="username" id="username" name="username" value="">
+            <input type="text" placeholder="username" id="username" name="username">
             <p class="response"></p>
         </div>
         <div class="form-control">
             <label for="password">password</label>
-            <input type="password" placeholder="password" id="password" name="password" value="">
+            <input type="password" placeholder="password" id="password" name="password">
             <p class="response"></p>
         </div>        
         <div class="btn-container">
@@ -30,17 +30,3 @@
 </body>
 </html>
 
-<!--
-     <div class="inputContainer">
-    <label for="color">Color</label>
-    <input type="color" name="color" id="color" value="#2E343F" onchange="changeValue('color', this.value)">
-    </div>
-
-    js : 
-    const root = document.documentElement;
-function changeValue(id, value) {
-  const suffix = (id != 'color' ? '%' : '');
-  root.style.setProperty(`--${id}`, value + suffix);
-  console.log(value + suffix)
-}
--->

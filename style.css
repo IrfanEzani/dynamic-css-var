@@ -1,7 +1,7 @@
 :root {
     --success : #18d26e;
     --alert : #ca6161;
-    --warning : #fffd91;
+    --warning : #e9c13c;
 }
 
 
@@ -20,17 +20,26 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.container {
-    border: 2px solid black;
+#container {
+    background-color: #fff;
     padding: 2rem;
+    border-radius: 25px;
 }
 
-.container form {
+#container a {
+    display: inline-block;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: lavender;
+    padding: 10px;
+}
+
+#container form {
     display: flex;
     flex-direction: column;
 }
 
-.container .form-control {
+#container .form-control {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
@@ -41,9 +50,21 @@ body {
     margin-bottom: 10px;
 }
 
+.form-control input {
+    background-color: #fff;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.form-control input:focus {
+    background-color: white;
+}
+
 
 .form-control.success input {
-	border-color:var(--success);
+    border-color:var(--success);
 }
 
 .form-control.error input {
@@ -67,7 +88,7 @@ body {
 	visibility: visible;
 }
 
-.container .btn-container {
+#container .btn-container {
     display: flex;
     justify-content: space-evenly;
     border: 1px solid white;
@@ -76,5 +97,10 @@ body {
 
 .btn-container button {
     flex-grow: 1;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0 2px;
 }
 
