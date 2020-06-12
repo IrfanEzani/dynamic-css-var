@@ -2,6 +2,7 @@
     --success : #18d26e;
     --alert : #ca6161;
     --warning : #e9c13c;
+    --active : lightcoral;
 }
 
 
@@ -13,7 +14,9 @@
 }
 body {
     min-height: 100vh;
-    background-color:lightblue;
+    background: url('science.png');
+    color: lightcoral;
+    text-align: center;
     margin: 0;
     padding: 0;
     font-weight: 800;
@@ -24,6 +27,12 @@ body {
     background-color: #fff;
     padding: 2rem;
     border-radius: 25px;
+    width: 30vw;
+    box-shadow: 10px 10px 15px #861f1f;
+}
+
+#container h2 {
+    font-size: 2em;
 }
 
 #container a {
@@ -59,7 +68,7 @@ body {
 }
 
 .form-control input:focus {
-    background-color: white;
+    border-color: var(--active);
 }
 
 
@@ -100,7 +109,16 @@ body {
     padding: 5px;
     color: black;
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid var(--active);
+    border-radius: 5px;
     margin: 0 2px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ca6161;
+    border-color: #ca6161;
+    color: white;
+    font-weight: 500;
 }
 

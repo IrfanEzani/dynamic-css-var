@@ -34,8 +34,8 @@ function check() {
         error(username, 'Username not found');
         error(password, 'Password not found');
     } else {
-        success(username, 'Username found, please wait');
-        success(password, 'Password match, please wait');
+        success(username, 'Username found, please wait for a while');
+        success(password, 'Password match, please wait for a while');
         setTimeout(() => {
             console.log('nice');
             container.innerHTML = '';
