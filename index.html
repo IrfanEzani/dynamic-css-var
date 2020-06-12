@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CSS Var</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="centre">
+
+    <div class="container">
+        <form id="form">
+        <div class="form-control">
+            <label for="name">Username</label>
+            <input type="text" placeholder="username" id="username" name="username" value="">
+            <p class="response"></p>
+        </div>
+        <div class="form-control">
+            <label for="password">password</label>
+            <input type="password" placeholder="password" id="password" name="password" value="">
+            <p class="response"></p>
+        </div>        
+        <div class="btn-container">
+        <button type="button" id="login">Login</button>
+        <button type="button" id="cancel">Cancel</button>
+        </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!--
+     <div class="inputContainer">
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color" value="#2E343F" onchange="changeValue('color', this.value)">
+    </div>
+
+    js : 
+    const root = document.documentElement;
+function changeValue(id, value) {
+  const suffix = (id != 'color' ? '%' : '');
+  root.style.setProperty(`--${id}`, value + suffix);
+  console.log(value + suffix)
+}
+-->
