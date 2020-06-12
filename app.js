@@ -7,7 +7,7 @@ const inputVal = document.querySelectorAll('input');
 const container = document.querySelector('#container');
 
 let regexUser = /^irfanezani$/;
-let regexPass = /^wong$/;
+let regexPass = /^wonghenhau$/;
 
 
 login.addEventListener('click', e => {

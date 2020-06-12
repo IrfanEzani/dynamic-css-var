@@ -32,7 +32,9 @@ body {
 }
 
 #container h2 {
+    font-weight: 800;
     font-size: 2em;
+    color: #861f1f;
 }
 
 #container a {
@@ -41,6 +43,13 @@ body {
     text-decoration: none;
     background-color: lavender;
     padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+#container a:hover {
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
 #container form {
@@ -107,8 +116,10 @@ body {
 .btn-container button {
     flex-grow: 1;
     padding: 5px;
-    color: black;
+    color: #661616;
+    font-weight: 500;
     background-color: white;
+    outline: none;
     border: 2px solid var(--active);
     border-radius: 5px;
     margin: 0 2px;
