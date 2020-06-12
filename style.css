@@ -49,7 +49,7 @@ body {
 
 #container a:hover {
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 #container form {

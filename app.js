@@ -11,13 +11,11 @@ let regexPass = /^wonghenhau$/;
 
 
 login.addEventListener('click', e => {
-    e.preventDefault();
     check();
 });
 
 
 cancel.addEventListener('click', e => {
-    e.preventDefault();
     uncheck();
 })
 
